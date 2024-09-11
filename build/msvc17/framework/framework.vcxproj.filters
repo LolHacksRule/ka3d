@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Symbian">
+      <UniqueIdentifier>{049de988-27d1-45f3-869e-0fcd6773a90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NGI">
+      <UniqueIdentifier>{7f9e474b-82cc-41e4-a082-fb7f4d7ed9bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\framework\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\win32\WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\win32\WinMain_dx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\DoubleBufferedArea.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\dprintf.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameApplication.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameAppUi.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameAppView.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameDocument.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameEngine.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameMain_S60_1st.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameMain_S60_3rd.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\symbian\GameTimer.cpp">
+      <Filter>Symbian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\NGI\NGIMain.cpp">
+      <Filter>NGI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\framework\NGI\NGISystem.cpp">
+      <Filter>NGI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\framework\App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\OSInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\source\framework\symbian\_std.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\DoubleBufferedArea.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\dprintf.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameApplication.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameAppUi.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameAppView.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameDocument.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameEngine.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameTimer.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\GameTimerObserver.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\source\framework\symbian\RenderAO.h">
+      <Filter>Symbian</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\include\framework\ngi\NGISystem.h">
+      <Filter>NGI</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

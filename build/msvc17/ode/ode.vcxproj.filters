@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b5e9c794-f53c-4387-887e-6d851886f6ef}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c4b60b11-ed14-49ba-9882-f1f6963e99a2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="ode-0.5">
+      <UniqueIdentifier>{87d4531c-2da8-4e79-8985-d2d1d32e926f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opcode">
+      <UniqueIdentifier>{6cbf1227-abe8-4aa7-97b9-5a619afbe541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opcode\Ice">
+      <UniqueIdentifier>{472df3b9-d390-4d19-89f4-5dc61ce19927}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\ode\ODEDefaultCollisionChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ODEObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ODEWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\odex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\array.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_kernel.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_quadtreespace.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_space.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_std.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_transform.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_box.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_ccylinder.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_distance.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_ray.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_sphere.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_trimesh.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\collision_util.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\error.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\export-dif.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\fastdot.c">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\fastldlt.c">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\fastlsolve.c">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\fastltsolve.c">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\joint.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\lcp.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\mass.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\mat.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\matrix.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\memory.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\misc.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\obstack.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\ode.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\odemath.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\quickstep.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\rotation.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\step.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\stepfast.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\testing.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\timer.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\ode\src\util.cpp">
+      <Filter>ode-0.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_AABBCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_AABBTree.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_BaseModel.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_BoxPruning.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Collider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Common.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_HybridModel.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_LSSCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_MeshInterface.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Model.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_OBBCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_OptimizedTree.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Picking.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_PlanesCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_RayCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SphereCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SweepAndPrune.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TreeBuilders.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TreeCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_VolumeCollider.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Opcode.cpp">
+      <Filter>opcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceAABB.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceContainer.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceHPoint.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceIndexedTriangle.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceMatrix3x3.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceMatrix4x4.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceOBB.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePlane.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePoint.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRandom.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRay.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRevisitedRadix.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceSegment.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceTriangle.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceUtils.cpp">
+      <Filter>opcode\Ice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\ode\all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\ODECollisionInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\ODEDefaultCollisionChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\ODEObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\ODEWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\odex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\array.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\collision.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_kernel.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\collision_space.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_space_internal.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_std.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_transform.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\collision_trimesh.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_trimesh_internal.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\collision_util.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\common.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\compatibility.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\config.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\contact.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\error.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\export-dif.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\joint.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\lcp.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\mass.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\mat.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\matrix.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\memory.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\misc.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\objects.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\objects.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\obstack.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\ode.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\odecpp.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\odecpp_collision.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\odecpp_old.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\odemath.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\quickstep.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\rotation.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\step.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\testing.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ode\timer.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\ode\src\util.h">
+      <Filter>ode-0.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_AABBCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_AABBTree.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_BaseModel.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_BoxBoxOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_BoxPruning.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Collider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Common.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_HybridModel.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_IceHook.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_LSSAABBOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_LSSCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_LSSTriOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_MeshInterface.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Model.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_OBBCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_OptimizedTree.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Picking.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_PlanesAABBOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_PlanesCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_PlanesTriOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_RayAABBOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_RayCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_RayTriOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_Settings.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SphereAABBOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SphereCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SphereTriOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_SweepAndPrune.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TreeBuilders.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TreeCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TriBoxOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_TriTriOverlap.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\OPC_VolumeCollider.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Opcode.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Stdafx.h">
+      <Filter>opcode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceAABB.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceAxes.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceBoundingSphere.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceContainer.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceFPU.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceHPoint.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceIndexedTriangle.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceLSS.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceMatrix3x3.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceMatrix4x4.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceMemoryMacros.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceOBB.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePairs.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePlane.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePoint.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IcePreprocessor.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRandom.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRay.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceRevisitedRadix.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceSegment.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceTriangle.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceTriList.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceTypes.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ode\ode-0.5\Opcode\Ice\IceUtils.h">
+      <Filter>opcode\Ice</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

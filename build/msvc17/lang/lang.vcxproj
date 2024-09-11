@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{65DB543F-D885-4010-859A-5A9806C8B20D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34804.30</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib\msvc17\lang-mdd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib\msvc17\lang-md.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\lang\Character.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Debug.cpp" />
+    <ClCompile Include="..\..\..\source\lang\dlmalloc.c" />
+    <ClCompile Include="..\..\..\source\lang\Float.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Format.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Formattable.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Globals.cpp" />
+    <ClCompile Include="..\..\..\source\lang\GlobalStorage.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Hashtable.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Huffman16.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Integer.cpp" />
+    <ClCompile Include="..\..\..\source\lang\internalError.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Math.cpp" />
+    <ClCompile Include="..\..\..\source\lang\MemoryPool.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Object.cpp" />
+    <ClCompile Include="..\..\..\source\lang\OutOfMemoryException.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Profile.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lang\Profiler.cpp" />
+    <ClCompile Include="..\..\..\source\lang\SingleLinkedList.cpp" />
+    <ClCompile Include="..\..\..\source\lang\String.cpp" />
+    <ClCompile Include="..\..\..\source\lang\System.cpp" />
+    <ClCompile Include="..\..\..\source\lang\TempBuffer.cpp" />
+    <ClCompile Include="..\..\..\source\lang\test.cpp" />
+    <ClCompile Include="..\..\..\source\lang\Throwable.cpp" />
+    <ClCompile Include="..\..\..\source\lang\UTFConverter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\config\msvc17\config.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\equal.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\greater.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\introsort.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\quicksort.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\sort.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\swap.h" />
+    <ClInclude Include="..\..\..\include\lang\algorithm\unique.h" />
+    <ClInclude Include="..\..\..\include\lang\all.h" />
+    <ClInclude Include="..\..\..\include\lang\Array.h" />
+    <ClInclude Include="..\..\..\include\lang\assert.h" />
+    <ClInclude Include="..\..\..\include\lang\Character.h" />
+    <ClInclude Include="..\..\..\include\lang\Converter.h" />
+    <ClInclude Include="..\..\..\include\lang\Debug.h" />
+    <ClInclude Include="..\..\..\include\lang\dlmalloc.h" />
+    <ClInclude Include="..\..\..\include\lang\Exception.h" />
+    <ClInclude Include="..\..\..\include\lang\Float.h" />
+    <ClInclude Include="..\..\..\include\lang\Format.h" />
+    <ClInclude Include="..\..\..\include\lang\FormatException.h" />
+    <ClInclude Include="..\..\..\include\lang\Formattable.h" />
+    <ClInclude Include="..\..\..\include\lang\Globals.h" />
+    <ClInclude Include="..\..\..\include\lang\GlobalStorage.h" />
+    <ClInclude Include="..\..\..\include\lang\Hashtable.h" />
+    <ClInclude Include="..\..\..\include\lang\Huffman16.h" />
+    <ClInclude Include="..\..\..\include\lang\Integer.h" />
+    <ClInclude Include="..\..\..\include\lang\internalError.h" />
+    <ClInclude Include="..\..\..\include\lang\Math.h" />
+    <ClInclude Include="..\..\..\include\lang\MemoryPool.h" />
+    <ClInclude Include="..\..\..\include\lang\Object.h" />
+    <ClInclude Include="..\..\..\include\lang\OutOfMemoryException.h" />
+    <ClInclude Include="..\..\..\include\lang\pp.h" />
+    <ClInclude Include="..\..\..\include\lang\pp_once.h" />
+    <ClInclude Include="..\..\..\include\lang\pp_once_emu.h" />
+    <ClInclude Include="..\..\..\include\lang\Profile.h" />
+    <ClInclude Include="..\..\..\include\lang\Profiler.h" />
+    <ClInclude Include="..\..\..\include\lang\Ptr.h" />
+    <ClInclude Include="..\..\..\include\lang\SingleLinkedList.h" />
+    <ClInclude Include="..\..\..\include\lang\String.h" />
+    <ClInclude Include="..\..\..\include\lang\System.h" />
+    <ClInclude Include="..\..\..\include\lang\TempBuffer.h" />
+    <ClInclude Include="..\..\..\include\lang\test.h" />
+    <ClInclude Include="..\..\..\include\lang\Throwable.h" />
+    <ClInclude Include="..\..\..\include\lang\UTFConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\lang\Array.inl" />
+    <None Include="..\..\..\include\lang\Hashtable.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

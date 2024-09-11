@@ -1,6 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "postprocessing_glow", "postprocessing_glow.vcproj", "{B0C3B276-D15B-4D51-B6A3-EF1ACE00AB0C}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34902.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "postprocessing_glow", "postprocessing_glow.vcxproj", "{B0C3B276-D15B-4D51-B6A3-EF1ACE00AB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,5 +17,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0413A7C4-7C55-479E-A635-72198554A5F1}
 	EndGlobalSection
 EndGlobal

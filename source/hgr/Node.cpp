@@ -6,7 +6,7 @@
 #include <lang/Exception.h>
 #include <math/float4x4.h>
 #ifdef PLATFORM_WIN32
-#include <typeinfo.h>
+#include <typeinfo> //Modified for modern compiler
 #endif
 #include <config.h>
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{04D3BAA8-00E0-4469-922F-D6C1A298196E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34804.30</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib\msvc17\hgr-mdd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib/msvc17/hgr-md.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\hgr\Camera.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Console.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\DefaultPipe.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\DefaultResourceManager.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Dummy.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Globals_hgr.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\GlowPipe.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\KeyframeSequence.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Light.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\LightSorter.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Lines.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Mesh.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Node.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Pipe.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\PipeSetup.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Scene.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\SceneInputStream.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\SceneOutputStream.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\TransformAnimation.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\TransformAnimationSet.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\UserPropertySet.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\ViewFrustum.cpp" />
+    <ClCompile Include="..\..\..\source\hgr\Visual.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\hgr\all.h" />
+    <ClInclude Include="..\..\..\include\hgr\Camera.h" />
+    <ClInclude Include="..\..\..\include\hgr\Console.h" />
+    <ClInclude Include="..\..\..\include\hgr\DefaultPipe.h" />
+    <ClInclude Include="..\..\..\include\hgr\DefaultResourceManager.h" />
+    <ClInclude Include="..\..\..\include\hgr\Dummy.h" />
+    <ClInclude Include="..\..\..\include\hgr\Globals.h" />
+    <ClInclude Include="..\..\..\include\hgr\GlowPipe.h" />
+    <ClInclude Include="..\..\..\include\hgr\impl\ParticleSystem_Integral.h" />
+    <ClInclude Include="..\..\..\include\hgr\KeyframeSequence.h" />
+    <ClInclude Include="..\..\..\include\hgr\Light.h" />
+    <ClInclude Include="..\..\..\include\hgr\LightSorter.h" />
+    <ClInclude Include="..\..\..\include\hgr\Lines.h" />
+    <ClInclude Include="..\..\..\include\hgr\Mesh.h" />
+    <ClInclude Include="..\..\..\include\hgr\Node.h" />
+    <ClInclude Include="..\..\..\include\hgr\ParticleSystem.h" />
+    <ClInclude Include="..\..\..\include\hgr\Pipe.h" />
+    <ClInclude Include="..\..\..\include\hgr\PipeSetup.h" />
+    <ClInclude Include="..\..\..\include\hgr\ResourceManager.h" />
+    <ClInclude Include="..\..\..\include\hgr\Scene.h" />
+    <ClInclude Include="..\..\..\include\hgr\SceneInputStream.h" />
+    <ClInclude Include="..\..\..\include\hgr\SceneOutputStream.h" />
+    <ClInclude Include="..\..\..\include\hgr\TransformAnimation.h" />
+    <ClInclude Include="..\..\..\include\hgr\TransformAnimationSet.h" />
+    <ClInclude Include="..\..\..\include\hgr\UserPropertySet.h" />
+    <ClInclude Include="..\..\..\include\hgr\ViewFrustum.h" />
+    <ClInclude Include="..\..\..\include\hgr\Visual.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\hgr\Camera.inl" />
+    <None Include="..\..\..\include\hgr\Mesh.inl" />
+    <None Include="..\..\..\include\hgr\Node.inl" />
+    <None Include="..\..\..\include\hgr\Scene.inl" />
+    <None Include="..\..\..\include\hgr\ViewFrustum.inl" />
+    <None Include="..\..\..\include\hgr\Visual.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

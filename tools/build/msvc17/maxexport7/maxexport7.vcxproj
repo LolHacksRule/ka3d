@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{AA9E0451-1273-461E-976F-07E0917737CC}</ProjectGuid>
+    <RootNamespace>maxexport7</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34804.30</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../../../include/config/msvc17;../../../../include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../../../../include/config/msvc17;../../../../include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;..\..\..\include\maxexport;..\..\..\build\msvc17\maxexport;..\..\..\..\source\ode\ode-0.5\OPCODE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MAXEXPORT7_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)maxexport7.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)maxexport7.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)maxexport7.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) C:\3dsmax7\plugins</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>./;..\..\..\include\maxexport;..\..\..\build\msvc17\maxexport;..\..\..\..\source\ode\ode-0.5\OPCODE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MAXEXPORT_EXPORTS;NDEBUG_ASSERT;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>core.lib;geom.lib;COMCTL32.lib;maxutil.lib;zlibdll.lib;mesh.lib;d3dx9.lib;Paramblk2.lib;math-md.lib;lua-md.lib;lang-md.lib;io-md.lib;gr-md.lib;grdx-md.lib;hgr-md.lib;ode-md.lib;img-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)hgrexport-max7.dle</OutputFile>
+      <AdditionalLibraryDirectories>C:\3dsmax7\maxsdk\lib;C:\program files\autodesk\3dsmax8\maxsdk\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)maxexport7.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "C:\Program Files\Autodesk\3dsMax8\plugins"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\include\maxexport\ParamBlockUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\ExportTriangle.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\ExportVertex.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\ExportWeightMap.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\INodeUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\Matrix3Util.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\maxexport.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MtlUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyCamera.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyDummy.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyGeometry.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyLight.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyMaterial.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyMesh.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyNode.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyPrimitive.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MySceneExport.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MySceneExportClassDesc.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\MyShape.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\PhysiqueUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\ProgressDialog.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\SkinUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\maxexport\StdMatUtil.cpp" />
+    <ClCompile Include="..\..\..\source\maxexport\WorldUnitRescale.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\maxexport\ArrayUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ColorUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\DialogItem.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ExportTriangle.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ExportVertex.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ExportWeightMap.h" />
+    <ClInclude Include="..\..\..\include\maxexport\INodeUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\Matrix3Util.h" />
+    <ClInclude Include="..\..\..\include\maxexport\maxexport.h" />
+    <ClInclude Include="..\..\..\include\maxexport\maxexportconfig.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MtlUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyCamera.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyDummy.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyGeometry.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyLight.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyMaterial.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyMesh.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyNode.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyPrimitive.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MySceneExport.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MySceneExportClassDesc.h" />
+    <ClInclude Include="..\..\..\include\maxexport\MyShape.h" />
+    <ClInclude Include="..\..\..\include\maxexport\OptionInterface.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ParamBlockUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\PhysiqueUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ProceduralTextureInterface.h" />
+    <ClInclude Include="..\..\..\include\maxexport\ProgressDialog.h" />
+    <ClInclude Include="..\..\..\include\maxexport\SilentQuit.h" />
+    <ClInclude Include="..\..\..\include\maxexport\SkinUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\StdAfx.h" />
+    <ClInclude Include="..\..\..\include\maxexport\StdMatUtil.h" />
+    <ClInclude Include="..\..\..\include\maxexport\TextureGeneratorInterface.h" />
+    <ClInclude Include="..\..\..\include\maxexport\version.h" />
+    <ClInclude Include="..\..\..\include\maxexport\WorldUnitsRescale.h" />
+    <ClInclude Include="..\maxexport\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\maxexport\maxexport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\docs\hgrexport-3dsmax.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

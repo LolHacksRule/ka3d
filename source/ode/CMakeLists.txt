@@ -1,0 +1,82 @@
+file(GLOB ODE_SRC "*.cpp")
+
+set(ODE_EXTERNAL_SRC
+    ode-0.5/ode/src/array.cpp
+    ode-0.5/ode/src/collision_kernel.cpp
+    ode-0.5/ode/src/collision_quadtreespace.cpp
+    ode-0.5/ode/src/collision_space.cpp
+    ode-0.5/ode/src/collision_std.cpp
+    ode-0.5/ode/src/collision_transform.cpp
+    ode-0.5/ode/src/collision_trimesh.cpp
+    ode-0.5/ode/src/collision_trimesh_box.cpp
+    ode-0.5/ode/src/collision_trimesh_ccylinder.cpp
+    ode-0.5/ode/src/collision_trimesh_distance.cpp
+    ode-0.5/ode/src/collision_trimesh_ray.cpp
+    ode-0.5/ode/src/collision_trimesh_sphere.cpp
+    ode-0.5/ode/src/collision_trimesh_trimesh.cpp
+    ode-0.5/ode/src/collision_util.cpp
+    ode-0.5/ode/src/error.cpp
+    ode-0.5/ode/src/export-dif.cpp
+    ode-0.5/ode/src/fastdot.c
+    ode-0.5/ode/src/fastldlt.c
+    ode-0.5/ode/src/fastlsolve.c
+    ode-0.5/ode/src/fastltsolve.c
+    ode-0.5/ode/src/joint.cpp
+    ode-0.5/ode/src/lcp.cpp
+    ode-0.5/ode/src/mass.cpp
+    ode-0.5/ode/src/mat.cpp
+    ode-0.5/ode/src/matrix.cpp
+    ode-0.5/ode/src/memory.cpp
+    ode-0.5/ode/src/misc.cpp
+    ode-0.5/ode/src/obstack.cpp
+    ode-0.5/ode/src/ode.cpp
+    ode-0.5/ode/src/odemath.cpp
+    ode-0.5/ode/src/quickstep.cpp
+    ode-0.5/ode/src/rotation.cpp
+    ode-0.5/ode/src/step.cpp
+    ode-0.5/ode/src/stepfast.cpp
+    ode-0.5/ode/src/testing.cpp
+    ode-0.5/ode/src/timer.cpp
+    ode-0.5/ode/src/util.cpp
+    ode-0.5/Opcode/OPC_AABBCollider.cpp
+    ode-0.5/Opcode/OPC_AABBTree.cpp
+    ode-0.5/Opcode/OPC_BaseModel.cpp
+    ode-0.5/Opcode/OPC_BoxPruning.cpp
+    ode-0.5/Opcode/OPC_Collider.cpp
+    ode-0.5/Opcode/OPC_Common.cpp
+    ode-0.5/Opcode/OPC_HybridModel.cpp
+    ode-0.5/Opcode/OPC_LSSCollider.cpp
+    ode-0.5/Opcode/OPC_MeshInterface.cpp
+    ode-0.5/Opcode/OPC_Model.cpp
+    ode-0.5/Opcode/OPC_OBBCollider.cpp
+    ode-0.5/Opcode/OPC_OptimizedTree.cpp
+    ode-0.5/Opcode/OPC_Picking.cpp
+    ode-0.5/Opcode/OPC_PlanesCollider.cpp
+    ode-0.5/Opcode/OPC_RayCollider.cpp
+    ode-0.5/Opcode/OPC_SphereCollider.cpp
+    ode-0.5/Opcode/OPC_SweepAndPrune.cpp
+    ode-0.5/Opcode/OPC_TreeBuilders.cpp
+    ode-0.5/Opcode/OPC_TreeCollider.cpp
+    ode-0.5/Opcode/OPC_VolumeCollider.cpp
+    ode-0.5/Opcode/Opcode.cpp
+    ode-0.5/Opcode/Ice/IceAABB.cpp
+    ode-0.5/Opcode/Ice/IceContainer.cpp
+    ode-0.5/Opcode/Ice/IceHPoint.cpp
+    ode-0.5/Opcode/Ice/IceIndexedTriangle.cpp
+    ode-0.5/Opcode/Ice/IceMatrix3x3.cpp
+    ode-0.5/Opcode/Ice/IceMatrix4x4.cpp
+    ode-0.5/Opcode/Ice/IceOBB.cpp
+    ode-0.5/Opcode/Ice/IcePlane.cpp
+    ode-0.5/Opcode/Ice/IcePoint.cpp
+    ode-0.5/Opcode/Ice/IceRandom.cpp
+    ode-0.5/Opcode/Ice/IceRay.cpp
+    ode-0.5/Opcode/Ice/IceRevisitedRadix.cpp
+    ode-0.5/Opcode/Ice/IceSegment.cpp
+    ode-0.5/Opcode/Ice/IceTriangle.cpp
+    ode-0.5/Opcode/Ice/IceUtils.cpp
+)
+
+include_directories(ode-0.5/ode/src ode-0.5/OPCODE)
+
+add_compile_definitions(dTRIMESH_ENABLED)
+add_library(ode-${MODULE_BUILD_TYPE} STATIC ${ODE_SRC} ${ODE_EXTERNAL_SRC})

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34804.30</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <IncludePath>../../../include/config/msvc17;../../../include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib\msvc17\io-mdd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\..\..\lib\msvc17\io-md.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\io\ByteArrayInputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\ByteArrayOutputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\CommandLineParser.cpp" />
+    <ClCompile Include="..\..\..\source\io\DataInputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\DataOutputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\FilterInputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\FilterOutputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\InputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\PathName.cpp" />
+    <ClCompile Include="..\..\..\source\io\PropertyParser.cpp" />
+    <ClCompile Include="..\..\..\source\io\std\FileInputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\std\FileOutputStream.cpp" />
+    <ClCompile Include="..\..\..\source\io\test.cpp" />
+    <ClCompile Include="..\..\..\source\io\win32\FindFile.cpp" />
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\adler32.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\compress.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\crc32.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\deflate.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\infback.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inffast.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inflate.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inftrees.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\trees.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\uncompr.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\zutil.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\io\all.h" />
+    <ClInclude Include="..\..\..\include\io\ByteArrayInputStream.h" />
+    <ClInclude Include="..\..\..\include\io\ByteArrayOutputStream.h" />
+    <ClInclude Include="..\..\..\include\io\CommandLineParser.h" />
+    <ClInclude Include="..\..\..\include\io\DataInput.h" />
+    <ClInclude Include="..\..\..\include\io\DataInputStream.h" />
+    <ClInclude Include="..\..\..\include\io\DataOutput.h" />
+    <ClInclude Include="..\..\..\include\io\DataOutputStream.h" />
+    <ClInclude Include="..\..\..\include\io\FileInputStream.h" />
+    <ClInclude Include="..\..\..\include\io\FileNotFoundException.h" />
+    <ClInclude Include="..\..\..\include\io\FileOutputStream.h" />
+    <ClInclude Include="..\..\..\include\io\FilterInputStream.h" />
+    <ClInclude Include="..\..\..\include\io\FilterOutputStream.h" />
+    <ClInclude Include="..\..\..\include\io\FindFile.h" />
+    <ClInclude Include="..\..\..\include\io\InputStream.h" />
+    <ClInclude Include="..\..\..\include\io\IOException.h" />
+    <ClInclude Include="..\..\..\include\io\OutputStream.h" />
+    <ClInclude Include="..\..\..\include\io\PathName.h" />
+    <ClInclude Include="..\..\..\include\io\PropertyParser.h" />
+    <ClInclude Include="..\..\..\include\io\test.h" />
+    <ClInclude Include="..\..\..\source\io\zlib-1.2.1\zlib.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

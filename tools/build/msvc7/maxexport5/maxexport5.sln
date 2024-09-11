@@ -1,0 +1,75 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "maxexport5", "maxexport5.vcproj", "{30003679-285C-46E2-9D42-DDECC5EF8818}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5BD3E80E-E1F7-46A3-A151-399E28F18450} = {5BD3E80E-E1F7-46A3-A151-399E28F18450}
+		{0341C920-1B9D-4B13-9BFF-9D60FFAF0332} = {0341C920-1B9D-4B13-9BFF-9D60FFAF0332}
+		{65DB543F-D885-4010-859A-5A9806C8B20D} = {65DB543F-D885-4010-859A-5A9806C8B20D}
+		{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC} = {FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}
+		{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03} = {DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}
+		{04D3BAA8-00E0-4469-922F-D6C1A298196E} = {04D3BAA8-00E0-4469-922F-D6C1A298196E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gr", "..\..\..\..\core\build\msvc7\gr\gr.vcproj", "{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hgr", "..\..\..\..\core\build\msvc7\hgr\hgr.vcproj", "{04D3BAA8-00E0-4469-922F-D6C1A298196E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "io", "..\..\..\..\core\build\msvc7\io\io.vcproj", "{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lang", "..\..\..\..\core\build\msvc7\lang\lang.vcproj", "{65DB543F-D885-4010-859A-5A9806C8B20D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "math", "..\..\..\..\core\build\msvc7\math\math.vcproj", "{5BD3E80E-E1F7-46A3-A151-399E28F18450}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "meshbuilder", "..\meshbuilder\meshbuilder.vcproj", "{0341C920-1B9D-4B13-9BFF-9D60FFAF0332}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{30003679-285C-46E2-9D42-DDECC5EF8818}.Debug.ActiveCfg = Release|Win32
+		{30003679-285C-46E2-9D42-DDECC5EF8818}.Debug.Build.0 = Release|Win32
+		{30003679-285C-46E2-9D42-DDECC5EF8818}.Release.ActiveCfg = Release|Win32
+		{30003679-285C-46E2-9D42-DDECC5EF8818}.Release.Build.0 = Release|Win32
+		{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}.Debug.ActiveCfg = Debug|Win32
+		{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}.Debug.Build.0 = Debug|Win32
+		{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}.Release.ActiveCfg = Release|Win32
+		{DCF97E5B-E033-4BD6-8F2A-2D1D6031FA03}.Release.Build.0 = Release|Win32
+		{04D3BAA8-00E0-4469-922F-D6C1A298196E}.Debug.ActiveCfg = Debug|Win32
+		{04D3BAA8-00E0-4469-922F-D6C1A298196E}.Debug.Build.0 = Debug|Win32
+		{04D3BAA8-00E0-4469-922F-D6C1A298196E}.Release.ActiveCfg = Release|Win32
+		{04D3BAA8-00E0-4469-922F-D6C1A298196E}.Release.Build.0 = Release|Win32
+		{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}.Debug.ActiveCfg = Debug|Win32
+		{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}.Debug.Build.0 = Debug|Win32
+		{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}.Release.ActiveCfg = Release|Win32
+		{FF9A4243-DE65-4E21-85A1-ACFB091EC0DC}.Release.Build.0 = Release|Win32
+		{65DB543F-D885-4010-859A-5A9806C8B20D}.Debug.ActiveCfg = Debug|Win32
+		{65DB543F-D885-4010-859A-5A9806C8B20D}.Debug.Build.0 = Debug|Win32
+		{65DB543F-D885-4010-859A-5A9806C8B20D}.Release.ActiveCfg = Release|Win32
+		{65DB543F-D885-4010-859A-5A9806C8B20D}.Release.Build.0 = Release|Win32
+		{5BD3E80E-E1F7-46A3-A151-399E28F18450}.Debug.ActiveCfg = Debug|Win32
+		{5BD3E80E-E1F7-46A3-A151-399E28F18450}.Debug.Build.0 = Debug|Win32
+		{5BD3E80E-E1F7-46A3-A151-399E28F18450}.Release.ActiveCfg = Release|Win32
+		{5BD3E80E-E1F7-46A3-A151-399E28F18450}.Release.Build.0 = Release|Win32
+		{0341C920-1B9D-4B13-9BFF-9D60FFAF0332}.Debug.ActiveCfg = Debug|Win32
+		{0341C920-1B9D-4B13-9BFF-9D60FFAF0332}.Debug.Build.0 = Debug|Win32
+		{0341C920-1B9D-4B13-9BFF-9D60FFAF0332}.Release.ActiveCfg = Release|Win32
+		{0341C920-1B9D-4B13-9BFF-9D60FFAF0332}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

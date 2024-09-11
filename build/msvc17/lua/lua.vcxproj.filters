@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="lua-5.0.2">
+      <UniqueIdentifier>{79406901-0e00-469d-a1e9-fdbe91764c95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\lua\LuaObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\LuaStackRestore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\LuaState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\LuaTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lapi.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lib\lauxlib.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lib\lbaselib.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lcode.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ldebug.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ldo.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ldump.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lfunc.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lgc.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\llex.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lib\lmathlib.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lmem.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lobject.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lopcodes.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lparser.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lstate.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lstring.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lib\lstrlib.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ltable.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lib\ltablib.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ltests.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\ltm.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lundump.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lvm.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\lua\lua-5.0.2\src\lzio.cpp">
+      <Filter>lua-5.0.2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\lua\all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\LuaException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\LuaObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\LuaStackRestore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\LuaState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\LuaTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lua\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lapi.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lcode.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\ldebug.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\ldo.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lfunc.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lgc.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\llex.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\llimits.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lmem.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lobject.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lopcodes.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lparser.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lstate.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lstring.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\ltable.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\ltm.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lundump.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lvm.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\lua\lua-5.0.2\src\lzio.h">
+      <Filter>lua-5.0.2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\lua\LuaObject.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\lua\LuaState.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\data\lua\myclass.lua">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

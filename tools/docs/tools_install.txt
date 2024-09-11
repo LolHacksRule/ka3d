@@ -1,0 +1,30 @@
+0) You need to have DirectX 9.0c installed, msdn.microsoft.com/directx
+
+1) You also need DirectX Pixel Shader 1.1 compatible display adapter,
+   e.g. GF4 (not MX!) or better
+
+2) Unpack shaders-1.4.2.zip to C:\ka3d\shaders,
+   so that shaders' readme.txt is in C:\ka3d\shaders\readme.txt
+
+3) Set environment variable KA3D=C:\ka3d
+
+4) Unpack hgrviewer-1.4.1.zip to C:\ka3d\hgrviewer
+
+5) Test that the sceneviewer works, start it from hgrviewer directory
+   and load scene from zax_exported/ directory. If you see walking
+   character on screen (see screenshots/), then it works.
+
+6) Unpack correct 3dsmax plugin (hgrexport-max6 preferred)
+   from 3dsmax-hgrexport-1.4.1.zip to your 3dsmax directory, e.g.
+   C:\3dsmax6\plugins
+
+7) Use 'DirectX Shader' material type when you create materials
+   for objects.  The other option is to use Standard Material,
+   but it's less flexible.
+
+8) Use C:\ka3d\shaders\character\s-bump.fx shader for the character
+   and C:\ka3d\shaders\level\s-bump.fx shader for the level
+   (notice that the shader uses diffuse map's alpha channel for glossiness)
+
+9) Browse *.txt docs included in the zips, they contain more info
+   if you're interested to take a look.

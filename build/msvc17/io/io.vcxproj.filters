@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="zlib-1.2.1">
+      <UniqueIdentifier>{bdf9cfdd-1e03-4739-8ecb-cf13120e2f36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\io\ByteArrayInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\ByteArrayOutputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\CommandLineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\DataInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\DataOutputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\std\FileInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\std\FileOutputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\FilterInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\FilterOutputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\win32\FindFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\InputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\PathName.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\PropertyParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\adler32.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\compress.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\crc32.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\deflate.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\infback.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inffast.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inflate.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\inftrees.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\trees.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\uncompr.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\io\zlib-1.2.1\zutil.c">
+      <Filter>zlib-1.2.1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\io\all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\ByteArrayInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\ByteArrayOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\CommandLineParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\DataInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\DataInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\DataOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\DataOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FileInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FileNotFoundException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FileOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FilterInputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FilterOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\FindFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\InputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\IOException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\OutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\PathName.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\PropertyParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\io\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\io\zlib-1.2.1\zlib.h">
+      <Filter>zlib-1.2.1</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
