@@ -1,3 +1,5 @@
+project(framework)
+
 file(GLOB FRAMEWORK_SRC "*.cpp")
 
 if(WIN32)
@@ -13,4 +15,5 @@ if(WIN32)
 #    list(APPEND FRAMEWORK_SRC ${FRAMEWORK_NGI_SRC})
 endif()
 
+add_compile_definitions(framework-${MODULE_BUILD_TYPE} _LIB)
 add_library(framework-${MODULE_BUILD_TYPE} STATIC ${FRAMEWORK_SRC})

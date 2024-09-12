@@ -1,6 +1,6 @@
-file(GLOB IMG_SRC "*.cpp") #Why is 2ntx from tools here
+project(img)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b ${CMAKE_CURRENT_SOURCE_DIR}/Devil-SDK-1.6.7/include ${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.5 ${CMAKE_CURRENT_SOURCE_DIR}/../io/zlib-1.2.1)
+file(GLOB IMG_SRC "*.cpp") #Why is 2ntx from tools here
 
 set(IMG_EXTERNAL_SRC
     jpeg-6b/jcapimin.cpp
@@ -67,6 +67,7 @@ set(IMG_EXTERNAL_SRC
     libpng-1.2.5/pngwutil.c
 )
 
-add_compile_definitions(IMG_JPG_SUPPORT IMG_PNG_SUPPORT IMG_IL_SUPPORT IMG_WRITER_SUPPORT)
+add_compile_definitions(img-${MODULE_BUILD_TYPE} IMG_JPG_SUPPORT IMG_PNG_SUPPORT IMG_IL_SUPPORT IMG_WRITER_SUPPORT)
 add_library(img-${MODULE_BUILD_TYPE} STATIC ${IMG_SRC} ${IMG_EXTERNAL_SRC})
+include_directories(img-${MODULE_BUILD_TYPE} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b ${CMAKE_CURRENT_SOURCE_DIR}/Devil-SDK-1.6.7/include ${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.5 ${CMAKE_CURRENT_SOURCE_DIR}/../io/zlib-1.2.1)
 target_link_libraries(img-${MODULE_BUILD_TYPE} ${CMAKE_CURRENT_SOURCE_DIR}/Devil-SDK-1.6.7/lib/DevIL.lib)
