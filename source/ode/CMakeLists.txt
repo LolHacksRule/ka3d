@@ -76,6 +76,6 @@ set(ODE_EXTERNAL_SRC
     ode-0.5/Opcode/Ice/IceUtils.cpp
 )
 
-add_compile_definitions(ode-${MODULE_BUILD_TYPE} _LIB dTRIMESH_ENABLED)
+add_compile_definitions(_LIB dTRIMESH_ENABLED)
 add_library(ode-${MODULE_BUILD_TYPE} STATIC ${ODE_SRC} ${ODE_EXTERNAL_SRC})
 target_include_directories(ode-${MODULE_BUILD_TYPE} PRIVATE ode-0.5/ode/src ode-0.5/OPCODE)

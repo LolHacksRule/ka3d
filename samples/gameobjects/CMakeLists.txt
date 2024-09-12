@@ -5,5 +5,5 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../ode/ode-0.5/include ${CMAKE_C
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/samples/gameobjects)
 
-add_compile_definitions(gameobjects _LIB)
+add_compile_definitions(_LIB)
 add_library(gameobjects STATIC ${GAMEOBJECTS_SRC})

@@ -14,9 +14,9 @@ include_directories($ENV{DXSDK_DIR}/Include) #DirectX 9/+ SDK must be installed,
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib/msvc17)
 
-add_compile_definitions(_CRT_SECURE_NO_DEPRECATE _CRT_SECURE_NO_WARNINGS)
+add_compile_definitions(_CRT_SECURE_NO_DEPRECATE)
 
-include_directories(${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/tools/include ${CMAKE_SOURCE_DIR}/include/config/msvc17)
+include_directories(${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/include/config/msvc17)
 
 add_subdirectory(source)
 add_subdirectory(samples) #Not yet buildable

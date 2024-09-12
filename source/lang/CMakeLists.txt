@@ -1,3 +1,5 @@
+project(lang)
+
 file(GLOB LANG_SRC "*.cpp" "*.c")
 
 add_compile_definitions(_LIB)
