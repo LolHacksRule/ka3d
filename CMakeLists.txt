@@ -19,5 +19,5 @@ add_compile_definitions(_CRT_SECURE_NO_DEPRECATE)
 include_directories(${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/include/config/msvc17)
 
 add_subdirectory(source)
-add_subdirectory(samples) #Not yet buildable
-add_subdirectory(tools) #Not yet buildable
+add_subdirectory(samples)
+add_subdirectory(tools)

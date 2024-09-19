@@ -4,4 +4,4 @@
 - The release by Kajala only includes DirectX 9 rendering.
 - You are free to fork this repo, port it to other platform and make a PR.
 
-Modified to also support modern development environments and locally installed DirectX SDK, samples and executables do not currently build with the latest build tools.
+Modified to also support modern development environments and locally installed DirectX SDK, all libraries and almost all applications build but you may get an error when building samples and tutorials with the latest build tools.

@@ -1,6 +1,6 @@
 project(img)
 
-file(GLOB IMG_SRC "*.cpp") #Why is 2ntx from tools here
+file(GLOB IMG_SRC "*.cpp" ${CMAKE_SOURCE_DIR}/tools/source/2ntx/convertToNTX.cpp) #Why is 2ntx from tools here, you can get rid of it if you want
 
 set(IMG_EXTERNAL_SRC
     jpeg-6b/jcapimin.cpp

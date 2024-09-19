@@ -1,6 +1,5 @@
 project(2ntx)
 
-#Uses HGR and GR
 file(GLOB 2NTX_SRC "*.cpp")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/tools/bin)
