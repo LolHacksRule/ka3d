@@ -1,6 +1,6 @@
 project(zaxdemo)
 
-file(GLOB ZAXDEMO_SRC "*.cpp")
+file(GLOB ZAXDEMO_SRC "*.cpp" "zaxdemo.rc")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/samples/zaxdemo)
 
