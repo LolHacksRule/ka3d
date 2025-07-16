@@ -70,7 +70,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>math-mdd.lib;lang-mdd.lib;io-mdd.lib;img-mdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>math-mdd.lib;lang-mdd.lib;io-mdd.lib;img-mdd.lib;hgr-mdd.lib;framework-mdd.lib;gr-mdd.lib;lua-mdd.lib;ode-mdd.lib;gameobjects.lib;grdx-mdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)zaxdemo.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)zaxdemo.pdb</ProgramDatabaseFile>
@@ -89,7 +89,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>math-md.lib;lang-md.lib;io-md.lib;img-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>math-md.lib;lang-md.lib;io-md.lib;img-md.lib;hgr-md.lib;framework-md.lib;gr-md.lib;lua-md.lib;ode-md.lib;gameobjects.lib;grdx-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)zaxdemo.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
